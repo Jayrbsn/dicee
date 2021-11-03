@@ -7,7 +7,7 @@ var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 var randomDiceNumber = "dice" + randomNumber1 + ".png";
 
 // add the file path to the above
-var randomImageSource = "images/" + randomDiceNumber;
+var randomImageSource = randomDiceNumber;
 
 // use dom to select the the first image
 var image1 = document.querySelectorAll("img")[0];
@@ -20,7 +20,7 @@ image1.setAttribute("src", randomImageSource);
 // do the same for the second dice
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 var randomDiceNumber2 = "dice" + randomNumber2 + ".png";
-var randomImageSource2 = "images/" + randomDiceNumber2;
+var randomImageSource2 = randomDiceNumber2;
 var image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src", randomImageSource2);
 
